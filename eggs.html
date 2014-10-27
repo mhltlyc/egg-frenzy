@@ -1,0 +1,14 @@
+<ul class="eggs-area">
+    <li ng-repeat="eggdata in eggsdata">
+        <div class="egg" ng-click="eggTouch($index)">
+            <img ng-src="/assets/img/stars.png" alt="" class="stars" ng-show=eggdata.stars>
+            <img ng-src="{{eggdata.src}}" alt="">
+            <h4 class="eggtitle">第{{eggdata.title}}只金蛋</h4>
+        </div>
+        <div class="hammer" ng-show=eggdata.status>
+            <img ng-src="/assets/img/hammer.png" alt="">
+        </div>
+
+    </li>
+</ul>
+

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 
-<html ng-app="eggfrenzy" ng-controller="mainCtrl" data-ng-init="init()">
+<html ng-app="eggfrenzy" ng-controller="eggsCtrl">
 
 <head>
     <meta charset="utf-8" />
-    <base href="http://localhost/saoma/" />
     <title>扫码抽奖</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -12,12 +11,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="yes" />
     <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/app.css" />
-    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="lib/js/jquery-2.1.1.min.js"></script>
 </head>
 
 <body>
-    adsf
+    恭喜你获得三只金蛋
+    <div egg-frenzy></div>
     <script src="lib/js/angular.min.js"></script>
+    <script src="lib/js/angular-touch.min.js"></script>
     <script src="assets/app.js"></script>
     <script src="assets/rock-directive.js"></script>
 </body>
