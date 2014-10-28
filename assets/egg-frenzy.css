@@ -1,0 +1,76 @@
+.egg-frenzy .top-box {
+    width: 100%;
+    background: #222A3F;
+    height: 13px;
+}
+.egg-frenzy .middle-box {
+    background: #F99C5D;
+    height: 50px;
+}
+.egg-frenzy .middle-box .left-text {
+    width: 50%;
+    float: left;
+    padding-top: 18px;
+    text-align: center;
+    font-size: 90%;
+}
+.egg-frenzy .middle-box .right-text {
+    width: 50%;
+    font-weight: 800;
+    color: #BC3F13;
+    font-size: 130%;
+    padding-top: 7px;
+    float: right;
+}
+.egg-frenzy .middle-box .right-text span {
+    font-size: 130%;
+}
+.egg-frenzy .eggs-box {
+    background: url(/assets/img/lotter_wrap.jpg);
+}
+.egg-frenzy .eggs-area {
+    display: block;
+    padding-top: 36px;
+    padding-left: 0px;
+    width: 310px;
+    height: 160px;
+    margin: 0 auto;
+    /*    padding-left: 10%;*/
+}
+.egg-frenzy .eggs-area li {
+    list-style: none;
+    display: block;
+    float: left;
+    position: relative;
+    width: 100px;
+}
+.egg-frenzy .eggs-area li .egg {
+    display: block;
+    position: relative;
+    margin-left: 13px;
+    /*    background: red;*/
+}
+.egg-frenzy .eggs-area li .egg .award-text {
+    position: absolute;
+    font-size: 80%;
+    top: 5px;
+    width: 86px;
+    text-align: center;
+}
+.egg-frenzy .eggs-area li .egg img.stars {
+    position: absolute;
+    display: block;
+    left: -17px;
+    top: -18px;
+}
+.egg-frenzy .eggs-area li .hammer img {
+    position: absolute;
+    display: block;
+    left: 65px;
+    top: 0;
+}
+.egg-frenzy .eggs-area li .eggtitle {
+    display: block;
+    margin-top: 13px;
+    text-align: center;
+}

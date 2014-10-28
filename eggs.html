@@ -1,14 +1,33 @@
-<ul class="eggs-area">
-    <li ng-repeat="eggdata in eggsdata">
-        <div class="egg" ng-click="eggTouch($index)">
-            <img ng-src="/assets/img/stars.png" alt="" class="stars" ng-show=eggdata.stars>
-            <img ng-src="{{eggdata.src}}" alt="">
-            <h4 class="eggtitle">第{{eggdata.title}}只金蛋</h4>
-        </div>
-        <div class="hammer" ng-show=eggdata.status>
-            <img ng-src="/assets/img/hammer.png" alt="">
-        </div>
+<link rel="stylesheet" href="assets/egg-frenzy.css" />
+<style type="text/css">
+    body {
+        background: #303B4F;
+    }
+</style>
+<div class="top-box"></div>
+<img src="assets/img/banner.jpg" alt="" width="100%">
 
-    </li>
-</ul>
+<div class="middle-box">
+    <div class="left-text">恭喜获得3颗金蛋</div>
+    <div class="right-text">已有<span> {{peopleNumber}}</span>人中奖</div>
+</div>
+<div class="eggs-box">
+    <ul class="eggs-area">
+        <li ng-repeat="eggdata in eggsdata">
+            <div class="egg" ng-click="eggTouch($index)">
+                <div class="award-text" ng-show=eggdata.stars>
+                    {{rockResult[$index].award}}
+                </div>
+                <img ng-src="/assets/img/stars.png" alt="" class="stars" ng-show=eggdata.stars>
+                <img ng-src="{{eggdata.src}}" alt="">
+                <!-- <h4 class="eggtitle">第{{eggdata.title}}只金蛋</h4>-->
+            </div>
+            <div class="hammer" ng-show=eggdata.status>
+                <img ng-src="/assets/img/hammer.png" alt="">
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="bottom-box"></div>
 
